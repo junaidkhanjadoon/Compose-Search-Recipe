@@ -2,7 +2,10 @@ package com.example.search.data.model
 
 data class ReciepeResponse(
     val meals: List<RecipeDTO>?=null
-) {
+)
+data class ReciepeResponseDetails(
+    val meals: List<RecipeDTO>?=null
+)
     data class RecipeDTO(
         val dateModified: Any,
         val idMeal: String,
@@ -58,4 +61,3 @@ data class ReciepeResponse(
         val strTags: String,
         val strYoutube: String
     )
-}
